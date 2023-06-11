@@ -23,6 +23,7 @@ Partial Class Form1
     <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         components = New ComponentModel.Container()
+        Dim resources As ComponentModel.ComponentResourceManager = New ComponentModel.ComponentResourceManager(GetType(Form1))
         TextBox1 = New TextBox()
         Button1 = New Button()
         TextBox2 = New TextBox()
@@ -58,6 +59,7 @@ Partial Class Form1
         TextBox2.Multiline = True
         TextBox2.Name = "TextBox2"
         TextBox2.ReadOnly = True
+        TextBox2.ScrollBars = ScrollBars.Both
         TextBox2.Size = New Size(197, 142)
         TextBox2.TabIndex = 3
         ' 
@@ -85,10 +87,11 @@ Partial Class Form1
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(12, 76)
+        TextBox3.Location = New Point(12, 71)
         TextBox3.Multiline = True
         TextBox3.Name = "TextBox3"
         TextBox3.ReadOnly = True
+        TextBox3.ScrollBars = ScrollBars.Both
         TextBox3.Size = New Size(197, 142)
         TextBox3.TabIndex = 3
         TextBox3.Visible = False
@@ -147,6 +150,7 @@ Partial Class Form1
         Controls.Add(Button1)
         Controls.Add(TextBox1)
         FormBorderStyle = FormBorderStyle.FixedSingle
+        Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         Name = "Form1"
         Text = "Scamzon Terminal"

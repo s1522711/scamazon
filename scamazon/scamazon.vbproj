@@ -6,7 +6,12 @@
     <StartupObject>Sub Main</StartupObject>
     <UseWindowsForms>true</UseWindowsForms>
     <MyType>WindowsForms</MyType>
+    <ApplicationIcon>funny-memes-dank-memes-good-memes-dumb-memes-random-memes-memes-funny-lol-relatable-memes-meme-dump.ico</ApplicationIcon>
   </PropertyGroup>
+
+  <ItemGroup>
+    <Content Include="funny-memes-dank-memes-good-memes-dumb-memes-random-memes-memes-funny-lol-relatable-memes-meme-dump.ico" />
+  </ItemGroup>
 
   <ItemGroup>
     <Import Include="System.Data" />

@@ -3,7 +3,7 @@
         If TextBox2.Text = "" Then
             TextBox2.Text = TextBox2.Text + TextBox1.Text
         ElseIf TextBox1.Text IsNot "" Then
-            TextBox2.Text = TextBox2.Text + vbNewLine + TextBox1.Text
+            TextBox2.Text = TextBox2.Text + Environment.NewLine + TextBox1.Text
         End If
         TextBox1.Text = ""
     End Sub
@@ -11,7 +11,7 @@
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         ProgressBar1.Value = 0
         Timer1.Start()
-        TextBox3.Text = "Your Order:" + vbNewLine + TextBox2.Text
+        TextBox3.Text = "Your Order:" + Environment.NewLine + TextBox2.Text
         TextBox2.Text = ""
         TextBox3.Visible = True
         ProgressBar1.Visible = True
