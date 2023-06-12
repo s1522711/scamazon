@@ -35,12 +35,14 @@ Partial Class Form1
         Label2 = New Label()
         Label3 = New Label()
         Button3 = New Button()
+        TextBox4 = New TextBox()
         SuspendLayout()
         ' 
         ' TextBox1
         ' 
         TextBox1.Location = New Point(12, 12)
         TextBox1.Name = "TextBox1"
+        TextBox1.PlaceholderText = "Item Name"
         TextBox1.Size = New Size(197, 23)
         TextBox1.TabIndex = 1
         ' 
@@ -55,7 +57,7 @@ Partial Class Form1
         ' 
         ' TextBox2
         ' 
-        TextBox2.Location = New Point(12, 56)
+        TextBox2.Location = New Point(12, 91)
         TextBox2.Multiline = True
         TextBox2.Name = "TextBox2"
         TextBox2.ReadOnly = True
@@ -65,7 +67,7 @@ Partial Class Form1
         ' 
         ' Button2
         ' 
-        Button2.Location = New Point(215, 34)
+        Button2.Location = New Point(215, 40)
         Button2.Name = "Button2"
         Button2.Size = New Size(81, 23)
         Button2.TabIndex = 4
@@ -74,7 +76,7 @@ Partial Class Form1
         ' 
         ' ProgressBar1
         ' 
-        ProgressBar1.Location = New Point(12, 12)
+        ProgressBar1.Location = New Point(12, 11)
         ProgressBar1.Name = "ProgressBar1"
         ProgressBar1.Size = New Size(197, 23)
         ProgressBar1.Step = 5
@@ -87,7 +89,7 @@ Partial Class Form1
         ' 
         ' TextBox3
         ' 
-        TextBox3.Location = New Point(12, 71)
+        TextBox3.Location = New Point(12, 91)
         TextBox3.Multiline = True
         TextBox3.Name = "TextBox3"
         TextBox3.ReadOnly = True
@@ -99,7 +101,7 @@ Partial Class Form1
         ' Label1
         ' 
         Label1.AutoSize = True
-        Label1.Location = New Point(12, 38)
+        Label1.Location = New Point(12, 73)
         Label1.Name = "Label1"
         Label1.Size = New Size(59, 15)
         Label1.TabIndex = 6
@@ -108,7 +110,7 @@ Partial Class Form1
         ' Label2
         ' 
         Label2.AutoSize = True
-        Label2.Location = New Point(12, 38)
+        Label2.Location = New Point(12, 37)
         Label2.Name = "Label2"
         Label2.Size = New Size(75, 15)
         Label2.TabIndex = 7
@@ -118,7 +120,7 @@ Partial Class Form1
         ' Label3
         ' 
         Label3.AutoSize = True
-        Label3.Location = New Point(12, 53)
+        Label3.Location = New Point(12, 52)
         Label3.Name = "Label3"
         Label3.Size = New Size(162, 15)
         Label3.TabIndex = 7
@@ -134,11 +136,19 @@ Partial Class Form1
         Button3.Text = "New Order?"
         Button3.UseVisualStyleBackColor = True
         ' 
+        ' TextBox4
+        ' 
+        TextBox4.Location = New Point(12, 41)
+        TextBox4.Name = "TextBox4"
+        TextBox4.PlaceholderText = "Item Price"
+        TextBox4.Size = New Size(197, 23)
+        TextBox4.TabIndex = 1
+        ' 
         ' Form1
         ' 
         AutoScaleDimensions = New SizeF(7F, 15F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(305, 227)
+        ClientSize = New Size(301, 240)
         Controls.Add(Button3)
         Controls.Add(Label3)
         Controls.Add(Label2)
@@ -148,11 +158,13 @@ Partial Class Form1
         Controls.Add(TextBox3)
         Controls.Add(TextBox2)
         Controls.Add(Button1)
+        Controls.Add(TextBox4)
         Controls.Add(TextBox1)
         FormBorderStyle = FormBorderStyle.FixedSingle
         Icon = CType(resources.GetObject("$this.Icon"), Icon)
         MaximizeBox = False
         Name = "Form1"
+        StartPosition = FormStartPosition.CenterScreen
         Text = "Scamzon Terminal"
         ResumeLayout(False)
         PerformLayout()
@@ -168,4 +180,5 @@ Partial Class Form1
     Friend WithEvents Label2 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents Button3 As Button
+    Friend WithEvents TextBox4 As TextBox
 End Class
